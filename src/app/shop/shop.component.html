@@ -1,0 +1,17 @@
+<div class="col-xs-12">
+  <h3>Shop our featured collection</h3>
+  <div class="col-xs-3 product" *ngFor="let product of products">
+    <div class="col-xs-12 photo">
+      <img src="../../assets/images/{{product.filename}}" height="100%" width="100%">
+    </div>
+    <div class="col-xs-12">
+      <p class="name">{{product.name}}</p>
+    </div>
+    <div class="col-xs-12">
+      <p class="price">${{product.price}}</p>
+    </div>
+    <div class="col-xs-12 centerBtn">
+      <button class="addBtn" (click)="shopService.addItem(product)">Add to cart</button>
+    </div>
+  </div>
+</div>

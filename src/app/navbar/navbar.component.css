@@ -1,0 +1,50 @@
+.nav {
+    background-color: #101bcc;
+    color: white;
+    height: 48px;
+}
+.rightAlign{
+    text-align: right;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.cart{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.glyphicon{
+    padding-right: 8px;
+}
+.counter{
+    background-color: white;
+    color: #101bcc;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 4px;
+}
+.shopBtn{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-weight: normal;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.cartBtn{
+    background-color: transparent;
+    border: 0;
+}
+
+.shopSelect{
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-weight: normal;
+    margin-left: 15px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.underline{
+    text-decoration: underline;
+}

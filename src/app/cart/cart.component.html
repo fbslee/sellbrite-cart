@@ -1,0 +1,27 @@
+<div class="col-xs-12">
+  <div class="col-xs-12">
+    <p class="centerText">Your Cart</p>
+  </div>
+  <div class="col-xs-12" *ngIf="shopService.counter === 0">
+    <p class="noItem">Nothing in your cart,<br>start shopping.</p>
+  </div>
+  <div class="col-xs-12" *ngIf="shopService.counter > 0">
+    <div class="col-xs-12 itemCart" *ngFor="let item of shopService.cart">
+        <div class="col-xs-6 itemImg">
+          <img src="../../assets/images/{{item.filename}}" height="50" width="100">
+        </div>
+        <div class="col-xs-6">
+          {{item.name}} <button class="glyphicon glyphicon-remove-sign removeBtn" (click)="shopService.removeItem(item)"></button><br><span class="price">${{item.price}} X {{item.amount}} = ${{item.price * item.amount}}</span>
+        </div>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <p class="centerLine">__________________</p>
+  </div>
+  <div class="col-xs-12">
+    <p class="total">Total &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;${{shopService.total}}</p>
+  </div>
+  <div class="col-xs-12 centerBtn">
+    <button class="backBtn" (click)="shopService.navigateTo('shop')">Back</button>
+  </div>
+</div>
